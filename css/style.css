@@ -280,17 +280,23 @@ body:after {
     top: -5px; }
   .site-navbar .unioncorp-brand {
     display: inline-flex;
-    flex-direction: column;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
     text-transform: uppercase;
     text-decoration: none;
     line-height: 1; }
+  .site-navbar .unioncorp-brand .brand-logo {
+    width: 42px;
+    height: 42px;
+    object-fit: contain; }
   .site-navbar .unioncorp-brand .brand-title {
     font-size: 22px;
     font-weight: 700;
     letter-spacing: 0.5px;
     color: #111; }
   .site-navbar .unioncorp-brand .brand-accent {
-    color: #3b6df6; }
+    color: #2c5b94; }
   .site-navbar .unioncorp-brand .brand-subtitle {
     font-size: 10px;
     letter-spacing: 1.6px;
@@ -299,7 +305,7 @@ body:after {
   .site-navbar .site-navigation .site-menu {
     margin-bottom: 0; }
     .site-navbar .site-navigation .site-menu .active {
-      color: #3b6df6;
+      color: #2c5b94;
       display: inline-block;
       padding: 20px 20px; }
     .site-navbar .site-navigation .site-menu a {
@@ -314,7 +320,7 @@ body:after {
         display: inline-block;
         text-decoration: none !important; }
         .site-navbar .site-navigation .site-menu > li > a:hover {
-          color: #3b6df6; }
+          color: #2c5b94; }
       .site-navbar .site-navigation .site-menu > li.social > a {
         padding-left: 5px;
         padding-right: 5px; }
@@ -562,13 +568,13 @@ body:after {
     .sticky-wrapper .site-navbar .unioncorp-brand .brand-title {
       color: #111; }
     .sticky-wrapper .site-navbar .unioncorp-brand .brand-accent {
-      color: #3b6df6; }
+      color: #2c5b94; }
     .sticky-wrapper .site-navbar .unioncorp-brand .brand-subtitle {
       color: #6d7786; }
     .sticky-wrapper .site-navbar .site-menu > li > a {
       color: #1a1a1a !important; }
       .sticky-wrapper .site-navbar .site-menu > li > a:hover, .sticky-wrapper .site-navbar .site-menu > li > a.active {
-        color: #3b6df6 !important; }
+        color: #2c5b94 !important; }
   .sticky-wrapper.is-sticky .site-navbar {
     background: #fff;
     border-bottom: 1px solid transparent;
@@ -579,22 +585,22 @@ body:after {
     .sticky-wrapper.is-sticky .site-navbar .unioncorp-brand .brand-title {
       color: #111; }
     .sticky-wrapper.is-sticky .site-navbar .unioncorp-brand .brand-accent {
-      color: #3b6df6; }
+      color: #2c5b94; }
     .sticky-wrapper.is-sticky .site-navbar .unioncorp-brand .brand-subtitle {
       color: #6d7786; }
     .sticky-wrapper.is-sticky .site-navbar .site-menu > li > a {
       color: #1a1a1a !important; }
-.sticky-wrapper.is-sticky .site-navbar .site-menu > li > a:hover, .sticky-wrapper.is-sticky .site-navbar .site-menu > li > a.active {
-        color: #3b6df6 !important; }
+      .sticky-wrapper.is-sticky .site-navbar .site-menu > li > a:hover, .sticky-wrapper.is-sticky .site-navbar .site-menu > li > a.active {
+        color: #2c5b94 !important; }
 
 /* JS Global Consultants layout */
 :root {
-  --jsgc-ink: #1c2140;
-  --jsgc-muted: #5a6480;
-  --jsgc-accent: #3b4cca;
-  --jsgc-sky: #eef3ff;
-  --jsgc-card: #f5f7ff;
-  --jsgc-border: #d6defa;
+  --jsgc-ink: #1b2338;
+  --jsgc-muted: #5b6b84;
+  --jsgc-accent: #2c5b94;
+  --jsgc-sky: #f1f4ff;
+  --jsgc-card: #f7f9ff;
+  --jsgc-border: #d7deef;
   --jsgc-white: #ffffff;
 }
 
@@ -610,6 +616,72 @@ body:after {
   background-size: cover;
   background-position: center;
   color: var(--jsgc-ink);
+}
+
+.jsgc-hero-slider .owl-stage-outer,
+.jsgc-hero-slider .owl-stage,
+.jsgc-hero-slider .owl-item {
+  height: 100%;
+}
+
+.jsgc-hero-slide {
+  position: relative;
+  min-height: 78vh;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  color: #fff;
+}
+
+.jsgc-hero-slide .container {
+  position: relative;
+  z-index: 2;
+}
+
+.jsgc-hero-content h1 {
+  font-size: clamp(2.4rem, 4vw, 3.5rem);
+  font-weight: 700;
+  color: #fff;
+  margin-bottom: 16px;
+}
+
+.jsgc-hero-content p {
+  color: rgba(255, 255, 255, 0.85);
+  margin-bottom: 28px;
+}
+
+.jsgc-hero-slider .jsgc-hero-overlay {
+  background: rgba(18, 26, 46, 0.55);
+}
+
+.jsgc-cta {
+  background: #ffffff;
+  color: var(--jsgc-accent);
+  border-radius: 10px;
+  padding: 12px 26px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.jsgc-cta:hover {
+  color: #1f4c7d;
+}
+
+.jsgc-hero-slider .owl-dots {
+  position: absolute;
+  width: 100%;
+  bottom: 20px;
+  text-align: center;
+}
+
+.jsgc-hero-slider .owl-dots .owl-dot span {
+  background: rgba(255, 255, 255, 0.5);
+}
+
+.jsgc-hero-slider .owl-dots .owl-dot.active span {
+  background: #ffffff;
 }
 
 .jsgc-hero-overlay {
@@ -735,9 +807,9 @@ body:after {
   background: #d7defd;
   color: var(--jsgc-accent);
   font-weight: 700;
-  text-align: center;
+  text-align: left;
   border-radius: 12px 12px 0 0;
-  padding: 10px;
+  padding: 14px 18px;
   margin: -24px -24px 18px;
 }
 
@@ -832,6 +904,113 @@ body:after {
 
 .jsgc-footer a:hover {
   color: #ffffff;
+}
+
+.footer-logo {
+  width: 120px;
+  height: auto;
+  margin-bottom: 16px;
+}
+
+.jsgc-team-heading {
+  margin-bottom: 40px;
+}
+
+.jsgc-team-card {
+  position: relative;
+  background: var(--jsgc-white);
+  border-radius: 20px;
+  padding: 70px 22px 30px;
+  text-align: center;
+  border: 1px solid var(--jsgc-border);
+  box-shadow: 0 16px 30px rgba(36, 56, 115, 0.08);
+  height: 100%;
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.jsgc-team-card h3 {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 6px;
+  color: var(--jsgc-ink);
+}
+
+.jsgc-team-card::before {
+  content: "";
+  position: absolute;
+  top: -50px;
+  left: -10%;
+  width: 120%;
+  height: 120px;
+  background: var(--jsgc-accent);
+  border-radius: 0 0 60% 60%;
+}
+
+.jsgc-team-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 20px 34px rgba(36, 56, 115, 0.18);
+}
+
+.jsgc-team-card:hover .jsgc-team-avatar {
+  transform: translateY(-4px);
+}
+
+.jsgc-team-role {
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: var(--jsgc-accent);
+  display: inline-block;
+  margin-bottom: 16px;
+}
+
+.jsgc-team-avatar {
+  width: 110px;
+  height: 110px;
+  margin: 0 auto 18px;
+  border-radius: 50%;
+  padding: 8px;
+  background: #f7f2e7;
+  position: relative;
+  z-index: 1;
+  transition: transform 0.3s ease;
+}
+
+.jsgc-team-avatar img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  object-fit: cover;
+  display: block;
+}
+
+.jsgc-team-social a {
+  display: inline-flex;
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  align-items: center;
+  justify-content: center;
+  background: #edf1ff;
+  color: var(--jsgc-accent);
+  margin: 0 4px;
+  font-size: 14px;
+}
+
+.jsgc-team-card--highlight {
+  background: #2f65b4;
+  color: #fff;
+}
+
+.jsgc-team-card--highlight h3,
+.jsgc-team-card--highlight .jsgc-team-role {
+  color: #fff;
+}
+
+.jsgc-team-card--highlight .jsgc-team-social a {
+  background: rgba(255, 255, 255, 0.2);
+  color: #fff;
 }
 
 @media (max-width: 991px) {

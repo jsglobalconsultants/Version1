@@ -24,6 +24,11 @@
     <link rel="stylesheet" href="css/aos.css">
 
     <link rel="stylesheet" href="css/style.css">
+
+    <link rel="icon" type="image/png" sizes="32x32" href="images/logo/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/logo/favicon/favicon-16x16.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="images/logo/favicon/apple-touch-icon.png">
+    <link rel="shortcut icon" href="images/logo/favicon/favicon.ico">
     
   </head>
   <body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
@@ -56,6 +61,7 @@
 
           <div class="col-6 col-xl-3">
             <a href="index.html" class="unioncorp-brand">
+              <img src="images/logo/jsglobal_logo.png" alt="JS Global Consultants logo" class="brand-logo">
               <span class="brand-title">JS Global <span class="brand-accent">Consultants</span></span>
             </a>
           </div>
@@ -64,12 +70,10 @@
             <nav class="site-navigation position-relative text-right" role="navigation">
 
               <ul class="site-menu main-menu js-clone-nav mr-auto d-none d-lg-block">
-                <li><a href="#contents" class="nav-link active">Home</a></li>
-                <li><a href="#introduction" class="nav-link">About</a></li>
+                <li><a href="#home" class="nav-link active">Home</a></li>
                 <li><a href="#global-accounting" class="nav-link">Services</a></li>
                 <li><a href="#advisory" class="nav-link">Work</a></li>
-                <li><a href="#startup" class="nav-link">Pricing</a></li>
-                <li><a href="#industries" class="nav-link">Blog</a></li>
+                <li><a href="#introduction" class="nav-link">About</a></li>
                 <li><a href="#contact" class="nav-link">Contact</a></li>
               </ul>
             </nav>
@@ -84,26 +88,48 @@
     </header>
 
     <main class="jsgc-main">
-      <section id="contents" class="jsgc-hero" style="background-image: url(images/unioncorp/bg_1.webp);">
-        <div class="jsgc-hero-overlay"></div>
-        <div class="container">
-          <div class="jsgc-hero-inner">
-            <p class="jsgc-eyebrow">Contents</p>
-            <h1 class="jsgc-hero-title">Contents</h1>
-            <div class="jsgc-contents-grid">
-              <div class="jsgc-contents-item">Introduction</div>
-              <div class="jsgc-contents-item">Our Focus</div>
-              <div class="jsgc-contents-item">Global Accounting &amp; Finance</div>
-              <div class="jsgc-contents-item">Global Payroll &amp; HR Compliance</div>
-              <div class="jsgc-contents-item">Taxation &amp; Regulatory Compliance</div>
-              <div class="jsgc-contents-item">Business &amp; Corporate Advisory</div>
-              <div class="jsgc-contents-item">Startup Advisory</div>
-              <div class="jsgc-contents-item">Due Diligence Services</div>
-              <div class="jsgc-contents-item">Industries We Serve</div>
-              <div class="jsgc-contents-item">Why Choose JS Global Consultants</div>
-              <div class="jsgc-contents-item">Our Commitment</div>
-              <div class="jsgc-contents-item">Contact Us</div>
+      <section id="home" class="jsgc-hero-slider">
+        <div class="slide-one-item owl-carousel">
+          <div class="jsgc-hero-slide" style="background-image: url(images/unioncorp/bg_2.webp);">
+            <div class="jsgc-hero-overlay"></div>
+            <div class="container">
+              <div class="jsgc-hero-content text-center">
+                <h1>Build Your Financial Plan With Our Specialists</h1>
+                <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+                <a href="#introduction" class="btn jsgc-cta">Get Started <span class="icon-keyboard_arrow_right"></span></a>
+              </div>
             </div>
+          </div>
+          <div class="jsgc-hero-slide" style="background-image: url(images/unioncorp/bg_1.webp);">
+            <div class="jsgc-hero-overlay"></div>
+            <div class="container">
+              <div class="jsgc-hero-content text-center">
+                <h1>We're Always Here To Give Financial Help!</h1>
+                <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+                <a href="#introduction" class="btn jsgc-cta">Get Started <span class="icon-keyboard_arrow_right"></span></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="contents" class="jsgc-section jsgc-section--muted">
+        <div class="container">
+          <p class="jsgc-eyebrow">Contents</p>
+          <h2 class="jsgc-title">Contents</h2>
+          <div class="jsgc-contents-grid">
+            <div class="jsgc-contents-item">Introduction</div>
+            <div class="jsgc-contents-item">Our Focus</div>
+            <div class="jsgc-contents-item">Global Accounting &amp; Finance</div>
+            <div class="jsgc-contents-item">Global Payroll &amp; HR Compliance</div>
+            <div class="jsgc-contents-item">Taxation &amp; Regulatory Compliance</div>
+            <div class="jsgc-contents-item">Business &amp; Corporate Advisory</div>
+            <div class="jsgc-contents-item">Startup Advisory</div>
+            <div class="jsgc-contents-item">Due Diligence Services</div>
+            <div class="jsgc-contents-item">Industries We Serve</div>
+            <div class="jsgc-contents-item">Why Choose JS Global Consultants</div>
+            <div class="jsgc-contents-item">Our Commitment</div>
+            <div class="jsgc-contents-item">Contact Us</div>
           </div>
         </div>
       </section>
@@ -344,8 +370,7 @@
           <div class="row">
             <div class="col-lg-6 mb-4">
               <div class="jsgc-card jsgc-card--header">
-                <div class="jsgc-card-top">1</div>
-                <h3 class="jsgc-card-title">Business Formation</h3>
+                <div class="jsgc-card-top">Business Formation</div>
                 <ul class="jsgc-list">
                   <li>Entity selection (Pvt Ltd, LLP, etc.)</li>
                   <li>Incorporation and MCA registrations</li>
@@ -354,8 +379,7 @@
             </div>
             <div class="col-lg-6 mb-4">
               <div class="jsgc-card jsgc-card--header">
-                <div class="jsgc-card-top">2</div>
-                <h3 class="jsgc-card-title">Tax &amp; Regulatory Setup</h3>
+                <div class="jsgc-card-top">Tax &amp; Regulatory Setup</div>
                 <ul class="jsgc-list">
                   <li>PAN, TAN, GST registrations</li>
                   <li>DPIIT and Startup India recognition</li>
@@ -364,8 +388,7 @@
             </div>
             <div class="col-lg-6 mb-4">
               <div class="jsgc-card jsgc-card--header">
-                <div class="jsgc-card-top">3</div>
-                <h3 class="jsgc-card-title">Licenses &amp; Registrations</h3>
+                <div class="jsgc-card-top">Licenses &amp; Registrations</div>
                 <ul class="jsgc-list">
                   <li>Shops and Establishment, IEC, FSSAI</li>
                   <li>MSME/Udyam, PF, PT</li>
@@ -375,8 +398,7 @@
             </div>
             <div class="col-lg-6 mb-4">
               <div class="jsgc-card jsgc-card--header">
-                <div class="jsgc-card-top">4</div>
-                <h3 class="jsgc-card-title">Finance &amp; Growth Support</h3>
+                <div class="jsgc-card-top">Finance &amp; Growth Support</div>
                 <ul class="jsgc-list">
                   <li>Accounting system setup</li>
                   <li>Financial projections and budgeting</li>
@@ -465,6 +487,73 @@
         </div>
       </section>
 
+      <section id="team" class="jsgc-section jsgc-section--muted">
+        <div class="container">
+          <div class="jsgc-team-heading text-center" data-aos="fade-up">
+            <p class="jsgc-eyebrow">Meet Our Brilliant Minds</p>
+            <h2 class="jsgc-title">Our Leadership Team</h2>
+          </div>
+          <div class="row">
+            <div class="col-md-6 col-lg-3 mb-4" data-aos="fade-up" data-aos-delay="100">
+              <div class="jsgc-team-card">
+                <div class="jsgc-team-avatar">
+                  <img src="images/janani.jpg" alt="Janani Sathvika">
+                </div>
+                <h3>Janani Sathvika</h3>
+                <span class="jsgc-team-role">CEO</span>
+                <div class="jsgc-team-social">
+                  <a href="#"><span class="icon-facebook"></span></a>
+                  <a href="#"><span class="icon-twitter"></span></a>
+                  <a href="#"><span class="icon-linkedin"></span></a>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-3 mb-4" data-aos="fade-up" data-aos-delay="200">
+              <div class="jsgc-team-card">
+                <div class="jsgc-team-avatar">
+                  <img src="images/anumula_ranjith.jfif" alt="Anumula Ranjith">
+                </div>
+                <h3>Anumula Ranjith</h3>
+                <span class="jsgc-team-role">Director</span>
+                <div class="jsgc-team-social">
+                  <a href="#"><span class="icon-facebook"></span></a>
+                  <a href="#"><span class="icon-twitter"></span></a>
+                  <a href="#"><span class="icon-linkedin"></span></a>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-3 mb-4" data-aos="fade-up" data-aos-delay="300">
+              <div class="jsgc-team-card jsgc-team-card--highlight">
+                <div class="jsgc-team-avatar">
+                  <img src="images/person_3.jpg" alt="Shakunthala">
+                </div>
+                <h3>Shakunthala</h3>
+                <span class="jsgc-team-role">Manager</span>
+                <div class="jsgc-team-social">
+                  <a href="#"><span class="icon-facebook"></span></a>
+                  <a href="#"><span class="icon-twitter"></span></a>
+                  <a href="#"><span class="icon-linkedin"></span></a>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-3 mb-4" data-aos="fade-up" data-aos-delay="400">
+              <div class="jsgc-team-card">
+                <div class="jsgc-team-avatar">
+                  <img src="images/person_4.jpg" alt="CA Pavan Kalyan">
+                </div>
+                <h3>CA Pavan Kalyan</h3>
+                <span class="jsgc-team-role">Audit Manager</span>
+                <div class="jsgc-team-social">
+                  <a href="#"><span class="icon-facebook"></span></a>
+                  <a href="#"><span class="icon-twitter"></span></a>
+                  <a href="#"><span class="icon-linkedin"></span></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       <section id="why-choose" class="jsgc-section jsgc-section--muted">
         <div class="container">
           <div class="row align-items-center">
@@ -535,6 +624,7 @@
           <div class="col-md-9">
             <div class="row">
               <div class="col-md-5">
+                <img src="images/logo/jsglobal_logo.png" alt="JS Global Consultants logo" class="footer-logo">
                 <h2 class="footer-heading mb-4">JS Global Consultants</h2>
                 <p>Global finance, payroll, and compliance partners for startups, growing enterprises, and established organizations.</p>
               </div>
@@ -601,4 +691,3 @@
   
   </body>
 </html>
-
