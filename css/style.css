@@ -912,6 +912,120 @@ body:after {
   margin-bottom: 16px;
 }
 
+.jsgc-blog-card {
+  background: var(--jsgc-white);
+  border-radius: 18px;
+  overflow: hidden;
+  box-shadow: 0 16px 30px rgba(36, 56, 115, 0.08);
+  border: 1px solid var(--jsgc-border);
+  height: 100%;
+}
+
+.jsgc-blog-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  display: block;
+}
+
+.jsgc-blog-body {
+  padding: 20px;
+}
+
+.jsgc-blog-meta {
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: var(--jsgc-muted);
+}
+
+.jsgc-blog-body h3 {
+  font-size: 18px;
+  margin: 10px 0;
+  color: var(--jsgc-ink);
+}
+
+.jsgc-blog-body p {
+  color: var(--jsgc-muted);
+}
+
+.jsgc-contact-hero {
+  min-height: 80vh;
+  display: flex;
+  align-items: center;
+  background: linear-gradient(120deg, #a179f2, #6e82f0);
+  padding: 120px 0;
+}
+
+.jsgc-contact-card-wrap {
+  background: #ffffff;
+  border-radius: 16px;
+  overflow: hidden;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  box-shadow: 0 20px 40px rgba(28, 32, 59, 0.2);
+}
+
+.jsgc-contact-panel {
+  background: #11b3c7;
+  color: #ffffff;
+  padding: 48px 40px;
+}
+
+.jsgc-contact-panel h2 {
+  font-size: 28px;
+  font-weight: 700;
+  margin-bottom: 16px;
+}
+
+.jsgc-contact-panel p {
+  color: rgba(255, 255, 255, 0.9);
+}
+
+.jsgc-contact-details {
+  margin-top: 24px;
+}
+
+.jsgc-contact-details p {
+  margin-bottom: 8px;
+}
+
+.jsgc-contact-form {
+  padding: 42px 40px;
+}
+
+.jsgc-contact-form h3 {
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 6px;
+}
+
+.jsgc-form-note {
+  color: var(--jsgc-muted);
+  font-size: 12px;
+  margin-bottom: 16px;
+}
+
+.jsgc-contact-form .form-control {
+  border-radius: 6px;
+  background: #f0f0f0;
+  border: 1px solid #e1e4f2;
+}
+
+.jsgc-contact-submit {
+  background: #0aa4be;
+  color: #ffffff;
+  border-radius: 20px;
+  padding: 10px 28px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.jsgc-contact-submit:hover {
+  color: #ffffff;
+  background: #0b93ab;
+}
+
 .jsgc-team-heading {
   margin-bottom: 40px;
 }
